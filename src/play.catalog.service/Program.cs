@@ -14,24 +14,12 @@ builder.Services.AddControllers(options =>
     options.SuppressAsyncSuffixInActionNames = false;
 
 });
-ServiceSettings serviceSettings = builder.Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
-builder.Services.AddSingleton(s =>
-{
-    var mongodbsettings = builder.Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
-    var mongoClient = new MongoClient(mongodbsettings.ConnectionString);
-    return mongoClient.GetDatabase(serviceSettings.ServiceName);
-});
-builder.Services.AddSingleton<IRepository<Item>>(serviceProvider =>
-{
-    var database = serviceProvider.GetService<IMongoDatabase>();
-    return new MongoRepository<Item>(database, "items");
-});
+
+builder.Services.AddMongo()
+    .AddMongoRepository<Item>("items");
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-// configure mongodb to store data in json format
-BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
-BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
