@@ -1,11 +1,5 @@
-using Microsoft.Extensions.Options;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization;
-using MongoDB.Bson.Serialization.Serializers;
-using MongoDB.Driver;
 using play.catalog.service.Entities;
-using play.catalog.service.Repositories;
-using play.catalog.service.Settings;
+using play.common.MongoDB;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.

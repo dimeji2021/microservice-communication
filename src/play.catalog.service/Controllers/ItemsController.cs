@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using play.catalog.service.Dtos;
 using play.catalog.service.Entities;
-using play.catalog.service.Repositories;
+using play.common;
 
 namespace play.catalog.service.Controllers
 {
@@ -17,7 +17,7 @@ namespace play.catalog.service.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAsync()
         {
-            return Ok((await _itemsRepository.GetItemsAsync()).Select(item => item.AsDto()));
+            return Ok((await _itemsRepository.GetAllItemsAsync()).Select(item => item.AsDto()));
         }
         [HttpGet("{id:Guid}")]
         public async Task<IActionResult> GetAsync(Guid id)
