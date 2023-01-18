@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj": {}
+    "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj": {
+    "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj",
         "projectName": "play.catalog.contracts",
-        "projectPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj",
+        "projectPath": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj",
         "packagesPath": "C:\\Users\\Kehinde Aregbesola\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\obj\\",
+        "outputPath": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kehinde Aregbesola\\AppData\\Roaming\\NuGet\\NuGet.Config",

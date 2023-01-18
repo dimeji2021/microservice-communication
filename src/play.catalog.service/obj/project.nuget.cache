@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZFCOCyirFF+eviVjb9CRkO0yay53EXkNa3I6nwVbHksjqgl9/wbSQgfjme3q0OYvgBhC9UpnFdXPUoDl2D03Fw==",
+  "dgSpecHash": "ZRj3Eih2IMIj8UnKKkkZed4hcMJuM2IFgxxqLTYgog1oNx4rYTvGjqVpRpQiRYBeqCoDR8uo7y3YXG4NAiXpRg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
+  "projectFilePath": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kehinde Aregbesola\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Kehinde Aregbesola\\.nuget\\packages\\masstransit\\8.0.10\\masstransit.8.0.10.nupkg.sha512",

@@ -2190,11 +2190,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
+      "projectUniqueName": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
       "projectName": "play.catalog.service",
-      "projectPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
+      "projectPath": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
       "packagesPath": "C:\\Users\\Kehinde Aregbesola\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\obj\\",
+      "outputPath": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kehinde Aregbesola\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2212,8 +2212,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj": {
-              "projectPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj"
+            "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj": {
+              "projectPath": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj"
             }
           }
         }
