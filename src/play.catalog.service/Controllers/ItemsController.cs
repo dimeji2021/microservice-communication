@@ -1,4 +1,6 @@
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
+using play.catalog.contracts;
 using play.catalog.service.Dtos;
 using play.catalog.service.Entities;
 using play.common;
@@ -10,9 +12,11 @@ namespace play.catalog.service.Controllers
     public class ItemsController : ControllerBase
     {
         private readonly IRepository<Item> _itemsRepository;
-        public ItemsController(IRepository<Item> itemsRepository)
+        private readonly IPublishEndpoint _publishEndpoint;
+        public ItemsController(IRepository<Item> itemsRepository, IPublishEndpoint publishEndpoint)
         {
             _itemsRepository = itemsRepository;
+            _publishEndpoint = publishEndpoint;
         }
         [HttpGet]
         public async Task<IActionResult> GetAsync()
@@ -36,6 +40,7 @@ namespace play.catalog.service.Controllers
                 CreatedDate = DateTimeOffset.UtcNow
             };
             await _itemsRepository.CreateAsync(item);
+            await _publishEndpoint.Publish(new CatalogItemCreated(item.Id, item.Name, item.Description));
             return CreatedAtAction(nameof(GetAsync), new { id = item.Id }, item);
         }
         [HttpPut("{id:Guid}")]
@@ -48,6 +53,7 @@ namespace play.catalog.service.Controllers
                 existingItem.Description = updatedItemDto.Description;
                 existingItem.Price = updatedItemDto.Price;
                 await _itemsRepository.UpdateAsync(existingItem);
+                await _publishEndpoint.Publish(new CatalogItemUpdated(existingItem.Id, existingItem.Name, existingItem.Description));
                 return NoContent();
             }
             return NotFound();
@@ -58,6 +64,7 @@ namespace play.catalog.service.Controllers
             var existingItem = await _itemsRepository.GetItemsAsync(id);
             if (existingItem is null) return NotFound();
             await _itemsRepository.RemoveAsync(existingItem.Id);
+            await _publishEndpoint.Publish(new CatalogItemDeleted(existingItem.Id));
             return NoContent();
         }
     }

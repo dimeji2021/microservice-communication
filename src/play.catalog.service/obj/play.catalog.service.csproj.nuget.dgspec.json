@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj": {}
+    "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj": {
+    "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
-        "projectName": "play.catalog.service",
-        "projectPath": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
+        "projectUniqueName": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj",
+        "projectName": "play.catalog.contracts",
+        "projectPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj",
         "packagesPath": "C:\\Users\\Kehinde Aregbesola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\obj\\",
+        "outputPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kehinde Aregbesola\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,66 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
+        "projectName": "play.catalog.service",
+        "projectPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\play.catalog.service.csproj",
+        "packagesPath": "C:\\Users\\Kehinde Aregbesola\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kehinde Aregbesola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj": {
+                "projectPath": "c:\\Users\\Kehinde Aregbesola\\Desktop\\microservice-project\\play.catalog\\src\\play.catalog.contracts\\play.catalog.contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -51,7 +111,7 @@
             },
             "play.common": {
               "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[1.0.2, )"
             }
           },
           "imports": [

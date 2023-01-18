@@ -1,16 +1,20 @@
+using MassTransit;
 using play.catalog.service.Entities;
 using play.common.MongoDB;
+// using Microsoft.Extensions.DependencyInjection;
+using play.common.MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
+
+builder.Services.AddMongo()
+    .AddMongoRepository<Item>("items")
+    .AddMassTransitWithRabbitMq();
 builder.Services.AddControllers(options =>
 {
     options.SuppressAsyncSuffixInActionNames = false;
 
 });
-
-builder.Services.AddMongo()
-    .AddMongoRepository<Item>("items");
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
